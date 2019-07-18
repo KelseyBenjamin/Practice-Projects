@@ -14,7 +14,20 @@ int main()
 	float Gtemp, A;
 	char measurement;
 	//ask for data
-	cout << "Enter and C for celsius or an F for fahrenheit then hit the space bar and enter the temperature";
+	cout << "Enter C for celsius or an F for fahrenheit then hit the space bar and enter the temperature" << endl;
+	cin >> measurement >> Gtemp;
 	//calculations
+	if ((measurement == 'C') || (measurement == 'c'))
+	{
+		A = ((Gtemp * 9) / 5) + 32;
+		cout << "The temp is: " << A << " F" << endl;
+	}
+	else if ((measurement == 'F') || (measurement == 'f'))
+	{
+		A = ((Gtemp - 32) * 5) / 9;
+		cout << "The temp is: " << A << " C" << endl;
+	}
 
+	system("pause");
+	return 0;
 }

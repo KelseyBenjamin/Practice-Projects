@@ -27,6 +27,8 @@ int main()
 
 	//Display answer
 	cout << "The area of the triangle is: " << A;
+	system("pause");
+	return 0;
 }
 
 
